@@ -58,9 +58,9 @@ def load_cvs():
     """Lade Wild-Bootstrap-CVs (B=5000 bevorzugt, sonst B=100, sonst Default)."""
     paths = [
         "wild_bootstrap_critical_values_v7_B5000.json",
-        "../03_Outputs/wild_bootstrap_critical_values_v7_B5000.json",
+        "../outputs/wild_bootstrap_critical_values_v7_B5000.json",
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "wild_bootstrap_critical_values_v7_B5000.json"),
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "03_Outputs", "wild_bootstrap_critical_values_v7_B5000.json"),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs", "wild_bootstrap_critical_values_v7_B5000.json"),
     ]
     for p in paths:
         if os.path.exists(p):

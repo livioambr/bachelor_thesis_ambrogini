@@ -54,7 +54,16 @@ SLIP_LAMBDA = 2.0
 SLIP_FLOOR = 0.025
 SLIP_CAP   = 0.20
 
-EXCEL_DATEI = "Datenreihe.xlsx"
+_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+def _find_excel():
+    for p in ["Datenreihe.xlsx",
+              os.path.join(_SCRIPT_DIR, "Datenreihe.xlsx"),
+              os.path.join(_SCRIPT_DIR, "..", "Datenreihe.xlsx"),
+              os.path.join(_SCRIPT_DIR, "..", "outputs", "Datenreihe.xlsx")]:
+        if os.path.exists(p):
+            return os.path.abspath(p)
+    return "Datenreihe.xlsx"  # Fallback
+EXCEL_DATEI = _find_excel()
 AKTIEN = {
     "Logitech": "LOGN",
     "Sika": "SIKA",
@@ -485,11 +494,11 @@ def main():
     # --- 1. Wild-Bootstrap-CVs laden (oder anbieten neu zu berechnen) ---
     candidate_paths = [
         "wild_bootstrap_critical_values_v7_B5000.json",
-        "../03_Outputs/wild_bootstrap_critical_values_v7_B5000.json",
+        "../outputs/wild_bootstrap_critical_values_v7_B5000.json",
         os.path.join(os.path.dirname(os.path.abspath(__file__)), "wild_bootstrap_critical_values_v7_B5000.json"),
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "03_Outputs", "wild_bootstrap_critical_values_v7_B5000.json"),
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs", "wild_bootstrap_critical_values_v7_B5000.json"),
         "wild_bootstrap_critical_values_v7.json",
-        "../03_Outputs/wild_bootstrap_critical_values_v7.json",
+        "../outputs/wild_bootstrap_critical_values_v7.json",
     ]
     cv = None
     for p in candidate_paths:
@@ -506,7 +515,7 @@ def main():
         except EOFError:
             antwort = "n"
         if antwort != "j":
-            print("Abbruch. Bitte 'wild_bootstrap_critical_values_v7_B5000.json' aus 03_Outputs/ in dieses Verzeichnis kopieren.", flush=True)
+            print("Abbruch. Bitte 'wild_bootstrap_critical_values_v7_B5000.json' aus outputs/ in dieses Verzeichnis kopieren.", flush=True)
             return
         cv = compute_wild_bootstrap_cvs(n_paths=5000,
                                        save_path="wild_bootstrap_critical_values_v7_B5000.json")
