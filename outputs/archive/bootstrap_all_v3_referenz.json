@@ -1,0 +1,612 @@
+{
+  "Logitech": {
+    "V6_dyn_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": 0.4266,
+          "sharpe_diff": -0.0906,
+          "return_diff_pp": -235.0644
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -13.6556,
+            4.705
+          ],
+          "sharpe_diff": [
+            -0.2062,
+            0.0135
+          ],
+          "return_diff_pp": [
+            -7474.5109,
+            24.2139
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.9225,
+          "sharpe": 0.1065,
+          "return": 0.9365
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B500_newmethod": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 500,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": 0.4266,
+          "sharpe_diff": -0.0906,
+          "return_diff_pp": -235.0644
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -10.865,
+            4.4212
+          ],
+          "sharpe_diff": [
+            -0.2019,
+            -0.01
+          ],
+          "return_diff_pp": [
+            -7747.7789,
+            -3.3011
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.876,
+          "sharpe": 0.068,
+          "return": 0.938
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B200_archive": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 200,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": 0.4266,
+          "sharpe_diff": -0.0906,
+          "return_diff_pp": -235.0644
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -10.7006,
+            5.7266
+          ],
+          "sharpe_diff": [
+            -0.2101,
+            -0.0089
+          ],
+          "return_diff_pp": [
+            -7481.8394,
+            -3.0249
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.885,
+          "sharpe": 0.08,
+          "return": 0.895
+        }
+      }
+    },
+    "Momentum_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": 33.0887,
+          "sharpe_diff": -0.0656,
+          "return_diff_pp": -198.437
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -12.5928,
+            38.5607
+          ],
+          "sharpe_diff": [
+            -0.3996,
+            0.257
+          ],
+          "return_diff_pp": [
+            -12528.5483,
+            599.7151
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.009,
+          "sharpe": 0.7145,
+          "return": 0.965
+        }
+      }
+    }
+  },
+  "Sika": {
+    "V6_dyn_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": -5.0449,
+          "sharpe_diff": -0.0906,
+          "return_diff_pp": -527.9333
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -16.6698,
+            4.7376
+          ],
+          "sharpe_diff": [
+            -0.1931,
+            -0.0027
+          ],
+          "return_diff_pp": [
+            -5891.3083,
+            -20.1202
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.3065,
+          "sharpe": 0.0635,
+          "return": 0.7265
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B500_newmethod": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 500,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": -5.0449,
+          "sharpe_diff": -0.0906,
+          "return_diff_pp": -527.9333
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -11.1936,
+            5.4695
+          ],
+          "sharpe_diff": [
+            -0.1564,
+            0.0136
+          ],
+          "return_diff_pp": [
+            -5169.9681,
+            21.9049
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.176,
+          "sharpe": 0.038,
+          "return": 0.624
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B200_archive": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 200,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": -5.0449,
+          "sharpe_diff": -0.0906,
+          "return_diff_pp": -527.9333
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -10.9201,
+            6.4604
+          ],
+          "sharpe_diff": [
+            -0.1466,
+            0.0159
+          ],
+          "return_diff_pp": [
+            -5049.3029,
+            56.0333
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.175,
+          "sharpe": 0.04,
+          "return": 0.63
+        }
+      }
+    },
+    "Momentum_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": -3.7687,
+          "sharpe_diff": -0.4525,
+          "return_diff_pp": -1091.9251
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -30.8485,
+            20.6419
+          ],
+          "sharpe_diff": [
+            -0.7764,
+            -0.1386
+          ],
+          "return_diff_pp": [
+            -13220.5893,
+            -66.7876
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.797,
+          "sharpe": 0.0085,
+          "return": 0.7605
+        }
+      }
+    }
+  },
+  "Richemont": {
+    "V6_dyn_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": -6.5619,
+          "sharpe_diff": -0.0733,
+          "return_diff_pp": -426.8412
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -12.4512,
+            5.7359
+          ],
+          "sharpe_diff": [
+            -0.1655,
+            0.0083
+          ],
+          "return_diff_pp": [
+            -6845.8887,
+            17.6822
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.131,
+          "sharpe": 0.0935,
+          "return": 0.8635
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B500_newmethod": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 500,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": -6.5619,
+          "sharpe_diff": -0.0732,
+          "return_diff_pp": -426.8412
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -11.987,
+            2.8429
+          ],
+          "sharpe_diff": [
+            -0.1764,
+            -0.0148
+          ],
+          "return_diff_pp": [
+            -6873.912,
+            -14.8007
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.084,
+          "sharpe": 0.074,
+          "return": 0.874
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B200_archive": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 200,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": -6.5619,
+          "sharpe_diff": -0.0732,
+          "return_diff_pp": -426.8412
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -12.1729,
+            2.604
+          ],
+          "sharpe_diff": [
+            -0.1675,
+            -0.0112
+          ],
+          "return_diff_pp": [
+            -6067.6568,
+            -12.4377
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.1,
+          "sharpe": 0.07,
+          "return": 0.855
+        }
+      }
+    },
+    "Momentum_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": 5.3847,
+          "sharpe_diff": -0.3622,
+          "return_diff_pp": -941.004
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -28.2166,
+            23.6513
+          ],
+          "sharpe_diff": [
+            -0.6705,
+            -0.0552
+          ],
+          "return_diff_pp": [
+            -15451.0507,
+            -17.8056
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.689,
+          "sharpe": 0.0235,
+          "return": 0.8455
+        }
+      }
+    }
+  },
+  "Lonza": {
+    "V6_dyn_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": -5.7525,
+          "sharpe_diff": -0.1476,
+          "return_diff_pp": -684.6074
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -14.6742,
+            0.9694
+          ],
+          "sharpe_diff": [
+            -0.2441,
+            -0.0703
+          ],
+          "return_diff_pp": [
+            -9422.712,
+            -47.8593
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.1265,
+          "sharpe": 0.001,
+          "return": 0.8145
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B500_newmethod": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 500,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": -5.7525,
+          "sharpe_diff": -0.1476,
+          "return_diff_pp": -684.6074
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -13.2887,
+            3.3814
+          ],
+          "sharpe_diff": [
+            -0.2028,
+            -0.0285
+          ],
+          "return_diff_pp": [
+            -7491.4063,
+            -34.7062
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.122,
+          "sharpe": 0.006,
+          "return": 0.74
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B200_archive": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 200,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": -5.7525,
+          "sharpe_diff": -0.1476,
+          "return_diff_pp": -684.6074
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -13.2007,
+            4.1264
+          ],
+          "sharpe_diff": [
+            -0.2053,
+            -0.0312
+          ],
+          "return_diff_pp": [
+            -7215.6903,
+            -43.1746
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.14,
+          "sharpe": 0.005,
+          "return": 0.755
+        }
+      }
+    },
+    "Momentum_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": 22.2812,
+          "sharpe_diff": -0.3196,
+          "return_diff_pp": -965.107
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -25.9218,
+            28.4062
+          ],
+          "sharpe_diff": [
+            -0.6739,
+            0.0238
+          ],
+          "return_diff_pp": [
+            -14639.4799,
+            -2.6708
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.11,
+          "sharpe": 0.0725,
+          "return": 0.8255
+        }
+      }
+    }
+  },
+  "Partners Group": {
+    "V6_dyn_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": 12.1222,
+          "sharpe_diff": -0.0533,
+          "return_diff_pp": -504.5486
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -12.1493,
+            16.0117
+          ],
+          "sharpe_diff": [
+            -0.2142,
+            0.1263
+          ],
+          "return_diff_pp": [
+            -7946.3799,
+            909.6744
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.086,
+          "sharpe": 0.513,
+          "return": 0.8125
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B500_newmethod": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 500,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": 12.1222,
+          "sharpe_diff": -0.0533,
+          "return_diff_pp": -504.5486
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -12.5787,
+            15.558
+          ],
+          "sharpe_diff": [
+            -0.2585,
+            0.0119
+          ],
+          "return_diff_pp": [
+            -11738.0574,
+            -0.2211
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.074,
+          "sharpe": 0.384,
+          "return": 0.902
+        }
+      },
+      "stationary_bootstrap_strategy_resim_B200_archive": {
+        "method": "stationary_bootstrap_with_strategy_resimulation",
+        "B": 200,
+        "mean_block_len": 21,
+        "slippage_mode": "dynamic",
+        "observed": {
+          "maxdd_diff_pp": 12.1222,
+          "sharpe_diff": -0.0533,
+          "return_diff_pp": -504.5486
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -12.0194,
+            15.5532
+          ],
+          "sharpe_diff": [
+            -0.2505,
+            0.0
+          ],
+          "return_diff_pp": [
+            -9915.4045,
+            -2.5739
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.07,
+          "sharpe": 0.335,
+          "return": 0.94
+        }
+      }
+    },
+    "Momentum_vs_BH": {
+      "paired_block_strategy_returns_B2000_oldmethod": {
+        "B": 2000,
+        "block_length_days": 21,
+        "observed": {
+          "maxdd_diff_pp": 34.7349,
+          "sharpe_diff": 0.1057,
+          "return_diff_pp": -256.9695
+        },
+        "ci_95": {
+          "maxdd_diff_pp": [
+            -2.2132,
+            46.8084
+          ],
+          "sharpe_diff": [
+            -0.2398,
+            0.5219
+          ],
+          "return_diff_pp": [
+            -12546.4847,
+            2236.367
+          ]
+        },
+        "p_values": {
+          "maxdd": 0.0045,
+          "sharpe": 0.582,
+          "return": 0.9505
+        }
+      }
+    }
+  }
+}

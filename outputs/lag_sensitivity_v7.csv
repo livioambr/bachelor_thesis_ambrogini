@@ -1,0 +1,16 @@
+Asset,Lag,TR %,MDD %,Sharpe,Panic Trades,B&H TR %
+Logitech,score[t-1],356.29,-80.88,0.385,6,380.1
+Logitech,score[t-2],334.43,-81.71,0.378,6,380.1
+Logitech,score[t-3],258.51,-83.36,0.351,6,380.1
+Sika,score[t-1],837.51,-72.94,0.519,11,1089.47
+Sika,score[t-2],660.93,-75.46,0.484,11,1089.47
+Sika,score[t-3],598.42,-76.2,0.47,11,1089.47
+Richemont,score[t-1],956.09,-67.5,0.505,7,957.01
+Richemont,score[t-2],920.55,-67.5,0.5,7,957.01
+Richemont,score[t-3],845.83,-67.5,0.489,7,957.01
+Lonza,score[t-1],508.3,-79.11,0.439,16,1029.36
+Lonza,score[t-2],399.64,-81.94,0.407,16,1029.36
+Lonza,score[t-3],487.23,-80.73,0.433,16,1029.36
+Partners Group,score[t-1],742.83,-63.93,0.533,17,1459.37
+Partners Group,score[t-2],631.56,-61.9,0.518,17,1459.37
+Partners Group,score[t-3],584.9,-62.29,0.504,17,1459.37

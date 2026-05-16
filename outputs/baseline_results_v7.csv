@@ -1,0 +1,26 @@
+Asset,Strategie,n_years,Total Return %,Ann. Return %,Ann. Vol %,Max DD %,Sharpe,Calmar
+Logitech,Buy & Hold,20.786,380.1,7.84,36.237,-85.573,0.39,0.092
+Logitech,Momentum SMA20,20.786,84.41,2.988,24.692,-63.17,0.243,0.047
+Logitech,"V7 (dir-Filter, dyn. Slippage)",20.786,302.77,6.932,33.919,-82.302,0.368,0.084
+Logitech,"V7 (ohne dir-Filter, dyn. Slip)",20.786,329.53,7.264,33.837,-81.126,0.377,0.09
+Logitech,"V7 (dir-Filter, fix 2.5%)",20.786,336.49,7.347,33.884,-82.302,0.379,0.089
+Sika,Buy & Hold,20.786,1089.47,12.651,29.803,-73.589,0.55,0.172
+Sika,Momentum SMA20,20.786,-48.15,-3.111,20.858,-85.036,-0.047,-0.037
+Sika,"V7 (dir-Filter, dyn. Slippage)",20.786,637.18,10.088,28.805,-75.457,0.479,0.134
+Sika,"V7 (ohne dir-Filter, dyn. Slip)",20.786,637.18,10.088,28.805,-75.457,0.479,0.134
+Sika,"V7 (dir-Filter, fix 2.5%)",20.786,686.81,10.433,28.786,-75.457,0.49,0.138
+Richemont,Buy & Hold,21.782,957.01,11.433,31.507,-67.496,0.502,0.169
+Richemont,Momentum SMA20,21.782,-73.57,-5.927,21.89,-89.257,-0.17,-0.066
+Richemont,"V7 (dir-Filter, dyn. Slippage)",21.782,898.37,11.141,30.984,-67.107,0.496,0.166
+Richemont,"V7 (ohne dir-Filter, dyn. Slip)",21.782,822.95,10.741,30.98,-67.107,0.485,0.16
+Richemont,"V7 (dir-Filter, fix 2.5%)",21.782,918.58,11.244,30.978,-67.107,0.499,0.168
+Lonza,Buy & Hold,21.782,1029.36,11.772,28.705,-77.53,0.535,0.152
+Lonza,Momentum SMA20,21.782,9.24,0.407,20.292,-57.515,0.122,0.007
+Lonza,"V7 (dir-Filter, dyn. Slippage)",21.782,416.1,7.825,27.972,-81.821,0.412,0.096
+Lonza,"V7 (ohne dir-Filter, dyn. Slip)",21.782,375.04,7.416,27.951,-83.267,0.399,0.089
+Lonza,"V7 (dir-Filter, fix 2.5%)",21.782,520.29,8.739,27.87,-81.821,0.443,0.107
+Partners Group,Buy & Hold,19.773,1459.37,14.903,28.835,-69.444,0.626,0.215
+Partners Group,Momentum SMA20,19.773,570.42,10.101,20.545,-36.13,0.571,0.28
+Partners Group,"V7 (dir-Filter, dyn. Slippage)",19.773,598.66,10.331,26.137,-61.114,0.509,0.169
+Partners Group,"V7 (ohne dir-Filter, dyn. Slip)",19.773,571.11,10.107,25.953,-60.265,0.503,0.168
+Partners Group,"V7 (dir-Filter, fix 2.5%)",19.773,703.69,11.115,26.061,-61.114,0.537,0.182
