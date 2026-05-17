@@ -1,0 +1,25 @@
+# BATH 2026 «Riding Bubbles» — V7-Konfiguration
+# Reproduzierbarkeits-Anforderungen fuer Python 3.10+
+#
+# Installation:
+#     pip install -r requirements.txt
+#
+# Tested with Python 3.10.11 on Windows 11 and Ubuntu 22.04.
+
+# --- Core scientific stack ---
+numpy>=1.24,<3.0
+pandas>=2.0,<3.0
+openpyxl>=3.1,<4.0           # Excel-Lesen (Datenreihe.xlsx)
+
+# --- Performance ---
+numba>=0.58,<1.0             # JIT-Kompilierung BSADF; cache=True, parallel=False (Windows-Fix)
+
+# --- Statistik (fuer Code-Review-Validierung) ---
+statsmodels>=0.14,<1.0       # HAC-OLS-Referenz fuer BSADF-Cross-Check
+
+# --- Visualisierung ---
+matplotlib>=3.7,<4.0         # Abbildungen 1-7 (Bar-Charts, 4-Panel-Plots)
+
+# --- Optional: Jupyter (falls Notebooks im Repo) ---
+# jupyter>=1.0
+# ipykernel>=6.0
