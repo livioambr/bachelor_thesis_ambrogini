@@ -1,0 +1,16 @@
+Asset,Lag,Total_Return_%,Max_Drawdown_%,Sharpe,Panik_Trades,BuyHold_Total_Return_%
+Logitech,score[t-1],369.3,-80.13,0.389,7,380.1
+Logitech,score[t-2],302.77,-82.3,0.368,7,380.1
+Logitech,score[t-3],273.46,-82.79,0.357,7,380.1
+Sika,score[t-1],826.31,-72.94,0.517,11,1089.47
+Sika,score[t-2],637.18,-75.46,0.479,11,1089.47
+Sika,score[t-3],574.51,-76.2,0.464,11,1089.47
+Richemont,score[t-1],941.74,-68.18,0.503,7,957.01
+Richemont,score[t-2],898.37,-67.11,0.496,7,957.01
+Richemont,score[t-3],785.27,-68.73,0.479,7,957.01
+Lonza,score[t-1],546.01,-78.22,0.45,16,1029.36
+Lonza,score[t-2],416.1,-81.82,0.412,16,1029.36
+Lonza,score[t-3],528.65,-79.81,0.445,16,1029.36
+Partners Group,score[t-1],780.44,-63.75,0.542,18,1459.37
+Partners Group,score[t-2],598.66,-61.11,0.509,18,1459.37
+Partners Group,score[t-3],527.81,-61.63,0.488,18,1459.37

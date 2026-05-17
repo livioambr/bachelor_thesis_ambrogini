@@ -2,30 +2,35 @@
 Backtest V7 — methodische Vollkorrektur der Reviewer-Befunde aus dem Gutachten 2026-05.
 
 Aenderungen gegenueber V3:
-- K2 / PSY-Konformitaet:   MIN_WINDOW = 178 (statt 60).  PSY (2015) empfehlen
-                           r0 ~= 0.01 + 1.8/sqrt(T); bei T=5000 ergibt das 178.
-                           Bezeichnung "PSY-konformer" ist damit empirisch gerechtfertigt.
-- K3 / Lag-Konvention:     Trade-Entscheidung an t verwendet bsadf_scores[t-2] und
-                           prices[t-2]; Rendite t-1 -> t. Klassische
-                           "Observe Close t-1 / Trade Close t-1 / Hold over Day t"-
-                           Modellierung — keine zeitgleiche Score-und-Trade-Annahme.
-- K1 / Schwellenwerte:     Empirische rolling Quantile werden durch ein einmal
-                           pre-computed Wild-Bootstrap-Quantil ersetzt (1'000 Pfade,
-                           Random Walk mit empirischer Volatilitaet); die kritischen
-                           BSADF-Werte sind damit ex-post fix und nicht prozyklisch.
-- K4 / Direktionalfilter:  Panik-Exit wird nur dann ausgeloest, wenn zusaetzlich der
+- K2 / PSY-Konformitaet:   MIN_WINDOW = 178 (statt 60). PSY (2015) empfehlen
+                           r0 ~= 0.01 + 1.8/sqrt(T); bei T~5000 ergibt das 178.
+                           Bezeichnung "PSY-konform" ist damit empirisch gerechtfertigt.
+- K3 / Lag-Konvention:     Trade-Entscheidung an Tag t verwendet bsadf_scores[t-2]
+                           und prices[t-2]; Periode-Rendite ist prices[t]/prices[t-1].
+                           Operative Lesart: "Observe Close t-2 -> Market-on-Close-
+                           Order fuer t-1 -> Hold over Day t" — mindestens ein voller
+                           Handelstag zwischen Signalbildung und Ausfuehrung.
+- K1 / Schwellenwerte:     Empirische rolling Quantile werden durch einmal
+                           pre-computed Wild-Bootstrap-Quantile ersetzt (B = 5'000
+                           Pfade, Random Walk mit empirischer Volatilitaet,
+                           Rademacher-Wild-Schock); die kritischen BSADF-Werte
+                           sind damit ex-post fix und nicht prozyklisch.
+- K4 / Direktionalfilter:  Panik-Exit wird nur ausgeloest, wenn zusaetzlich der
                            60-Tages-Trend positiv ist (prices[t-2] > prices[t-2-60]).
                            Damit werden Crash-Tag-Verkaeufe (Lehman 2008, COVID 2020)
                            ex ante unterdrueckt.
 
-Outputs:
-- baseline_results_v7.csv
-- bootstrap_v7.json
-- slippage_sensitivity_v7.csv
-- lag_sensitivity_v7.csv
-- anhang_b_bsadf_v2.csv
-- pghn_trade_audit.csv
-- wild_bootstrap_critical_values_v7.json
+Outputs (von main() erzeugt):
+- wild_bootstrap_critical_values_v7_B5000.json   (falls noch nicht vorhanden)
+- baseline_results_v7.csv                        (Tabelle 3)
+- bootstrap_v7_B5000.json                        (Tabelle 4)
+- slippage_sensitivity_v7.csv                    (Tabelle 5)
+
+Separat erzeugt (Hilfsskripte, nicht Teil dieser Datei):
+- lag_sensitivity_v7.csv                         (Anhang G)
+- anhang_b_bsadf_v2.csv                          (Anhang B)
+- crash_tag_audit_v7.csv                         (Anhang D)
+- pghn_trade_audit_v7.csv                        (Anhang E)
 """
 import os
 import json
@@ -591,9 +596,9 @@ def main():
         print(f"   dt = {time.time()-t0:.0f}s, p_MDD = {p['maxdd']:.3f}, "
               f"p_Sharpe = {p['sharpe']:.3f}, p_TR = {p['return']:.3f}", flush=True)
 
-    with open("bootstrap_v7.json", "w") as f:
+    with open("bootstrap_v7_B5000.json", "w") as f:
         json.dump(bootstrap_results, f, indent=2)
-    print(f"\nGespeichert -> bootstrap_v7.json", flush=True)
+    print(f"\nGespeichert -> bootstrap_v7_B5000.json", flush=True)
 
     # --- 4. Slippage-Sensitivitaet fuer PGHN ---
     print(flush=True)

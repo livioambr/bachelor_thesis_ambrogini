@@ -1,0 +1,157 @@
+{
+  "Logitech": {
+    "V7_dyn_vs_BH": {
+      "method": "stationary_bootstrap_strategy_resim_v7",
+      "B": 100,
+      "mean_block_len": 21,
+      "observed": {
+        "maxdd_diff_pp": 3.2711,
+        "sharpe_diff": -0.0223,
+        "return_diff_pp": -77.3316
+      },
+      "ci_95": {
+        "maxdd_diff_pp": [
+          -4.2856,
+          5.6178
+        ],
+        "sharpe_diff": [
+          -0.2279,
+          0.0118
+        ],
+        "return_diff_pp": [
+          -3955.0731,
+          41.8335
+        ]
+      },
+      "p_values": {
+        "maxdd": 0.19,
+        "sharpe": 0.7,
+        "return": 0.98
+      }
+    }
+  },
+  "Sika": {
+    "V7_dyn_vs_BH": {
+      "method": "stationary_bootstrap_strategy_resim_v7",
+      "B": 100,
+      "mean_block_len": 21,
+      "observed": {
+        "maxdd_diff_pp": -1.8681,
+        "sharpe_diff": -0.071,
+        "return_diff_pp": -452.2873
+      },
+      "ci_95": {
+        "maxdd_diff_pp": [
+          -5.5769,
+          5.8605
+        ],
+        "sharpe_diff": [
+          -0.162,
+          0.0345
+        ],
+        "return_diff_pp": [
+          -5877.93,
+          164.4924
+        ]
+      },
+      "p_values": {
+        "maxdd": 0.3,
+        "sharpe": 0.22,
+        "return": 0.68
+      }
+    }
+  },
+  "Richemont": {
+    "V7_dyn_vs_BH": {
+      "method": "stationary_bootstrap_strategy_resim_v7",
+      "B": 100,
+      "mean_block_len": 21,
+      "observed": {
+        "maxdd_diff_pp": 0.3888,
+        "sharpe_diff": -0.0053,
+        "return_diff_pp": -58.6475
+      },
+      "ci_95": {
+        "maxdd_diff_pp": [
+          -4.2803,
+          5.2964
+        ],
+        "sharpe_diff": [
+          -0.1518,
+          0.0389
+        ],
+        "return_diff_pp": [
+          -7065.1059,
+          237.0696
+        ]
+      },
+      "p_values": {
+        "maxdd": 0.7,
+        "sharpe": 0.93,
+        "return": 0.97
+      }
+    }
+  },
+  "Lonza": {
+    "V7_dyn_vs_BH": {
+      "method": "stationary_bootstrap_strategy_resim_v7",
+      "B": 100,
+      "mean_block_len": 21,
+      "observed": {
+        "maxdd_diff_pp": -4.2909,
+        "sharpe_diff": -0.1222,
+        "return_diff_pp": -613.2596
+      },
+      "ci_95": {
+        "maxdd_diff_pp": [
+          -8.2421,
+          4.7282
+        ],
+        "sharpe_diff": [
+          -0.2339,
+          0.0155
+        ],
+        "return_diff_pp": [
+          -5038.8325,
+          22.9746
+        ]
+      },
+      "p_values": {
+        "maxdd": 0.19,
+        "sharpe": 0.07,
+        "return": 0.66
+      }
+    }
+  },
+  "Partners Group": {
+    "V7_dyn_vs_BH": {
+      "method": "stationary_bootstrap_strategy_resim_v7",
+      "B": 100,
+      "mean_block_len": 21,
+      "observed": {
+        "maxdd_diff_pp": 8.3304,
+        "sharpe_diff": -0.1176,
+        "return_diff_pp": -860.7063
+      },
+      "ci_95": {
+        "maxdd_diff_pp": [
+          -5.8114,
+          9.2945
+        ],
+        "sharpe_diff": [
+          -0.3073,
+          0.0305
+        ],
+        "return_diff_pp": [
+          -5891.1534,
+          90.8565
+        ]
+      },
+      "p_values": {
+        "maxdd": 0.04,
+        "sharpe": 0.17,
+        "return": 0.92
+      }
+    }
+  }
+}
